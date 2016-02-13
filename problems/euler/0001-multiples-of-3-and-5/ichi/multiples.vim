@@ -17,7 +17,11 @@ function! Multiples_to(limit)
       let total = number + total
     endif
   endfor
-  echo "the total of all multiples of 3 or 5 to " . a:limit . " is " . total
+  " use both echom and return.
+  " echom gives feedback for people calling the function within vim
+  " while return gives back a value to a calling function useful for
+  " testing purposes.
+  echom "the total of all multiples of 3 or 5 to " . a:limit . " is " . total
   return total
 endfunction
 
