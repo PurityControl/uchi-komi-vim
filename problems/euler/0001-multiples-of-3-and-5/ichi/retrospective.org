@@ -1,0 +1,31 @@
+#+TITLE: Retrospective for multiples of 3 and 5.
+
+* Running the project
+** Tests
+- ~$ vim -S multiples_test.vim~
+- from a buffer with mulitples_test.vim open
+  - ~:source %~
+
+** Code
+Run the script so the function can be accessed
+- ~$ vim -S multiples.vim~
+- or from a buffer with multiples.vim open
+  - ~source %~
+
+Then call the function
+~:call Multiples_to(1000)~
+
+* Retrospective
+Simple first implmentation more about process of setting up vim and testing.
+
+*Process Followed
+- Created home bake assertion function.
+- heavily documented code to explain process of creating the function with
+  vimL's peculiarities.
+
+*TODO
+look at how to map key command to calling of functions
+become more familiar about how to add vim functionality so that it is loaded as
+part of vim.
+
+
